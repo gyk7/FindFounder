@@ -1,4 +1,4 @@
-# 10845번
+# 백준 - 10845번
 from sys import stdin
 N = int(stdin.readline())
 asdf =[]
