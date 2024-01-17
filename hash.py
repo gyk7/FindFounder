@@ -1,3 +1,4 @@
+# 백준 1620 - hash
 N, M = map(int, input().split())
 
 idx_to_name = {}
