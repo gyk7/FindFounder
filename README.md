@@ -1,10 +1,12 @@
 # FIND FOUNDER
 # 우리 FISA 최종 프로젝트
-TEAM : FIFO
+* TEAM : FIFO
 
-DATE : 2024-03-25 ~ 2024-05-08
+* [TEAM NOTION LINK](https://www.notion.so/d05de897559c443eb6e6cc4cd770588f)
 
-MEMBERS : 김가영, 김윤성, 김찬기, 박명우, 윤종욱
+* DATE : 2024-03-25 ~ 2024-05-08
+
+* MEMBERS : 김가영, 김윤성, 김찬기, 박명우, 윤종욱
 
 ## 만든이유
 고령사회에 정년퇴직 이후에도 자영업 희망하는 사람들이 많아졌다 하지만
@@ -24,6 +26,12 @@ MEMBERS : 김가영, 김윤성, 김찬기, 박명우, 윤종욱
 ![image](https://github.com/kimyoonseong/FindFounder/assets/37408405/8d92ff05-9504-462b-a38a-ebf5bd2ea3e8)
 ![image](https://github.com/kimyoonseong/FindFounder/assets/37408405/fd2072c3-daa7-4551-9c70-69bc88e1f95d)
 
+## 주요 기능
+⭐ 지역 통계 : 서울 시내 지역별 업종 정보 습득(자치구, 행정동)  
+
+⭐ **AI 컨설팅** : 사용자 맞춤 업종 추천 및 인사이트 제공, 대출 상품 정보 제시  
+
+⭐ 커뮤니티 : 사용자들 간 노하우 및 정보 공유
 
 ## ** 어려웠던 점:**
 1.REST API 구축 후 SWAGGER에서 TEST가 끝나도 Front에 지식이 부족하여, api에서 return 된 json값을 화면에 나타내는데 어려움을 겪음.
@@ -36,7 +44,12 @@ MEMBERS : 김가영, 김윤성, 김찬기, 박명우, 윤종욱
 
 5.kakao 맵 api 사용시 자치구별로 나눠서 가시적으로 표시해야했는데, 서울시 자치구 SHP파일을 QSIS앱으로 좌표를 Json으로 추출후 , Frontend에서 적용할때, 좌표 용량으로인해 , 용량을 줄이는데 어려움을 겪음
 
+6. 이메일 인증 시스템 : 보안 프로그램에서 이메일을 보호하고 있어서 충돌때문에 이메일 전송이 안됨. 보안 프로그램을 중지시키고 전송해보니 성공함.
+
+7. jwt 인증 : springboot2 버전과 springboot3 버전에서 jwt를 설정하는 데에 차이가 많이 나서 버전에 맞게 수정하니 해결됨.
+
 ## **Try (시도할 내용):**
-ELK를이용한 사용자 로그 수집 및 Grafana , Prometheus를 이용한 시스템 로그수집(완료)
-배포환경에서도 동작하여 여러사용자가 접속했을때 로그 확인 
+1. ELK를이용한 사용자 로그 수집 및 Grafana , Prometheus를 이용한 시스템 로그수집(완료)
+2. 배포환경에서도 동작하여 여러 사용자가 접속했을때 로그 확인
+3. 단기, 중기, 장기 기간별 모델을 나누어서 개발하여 서비스 제공
 
